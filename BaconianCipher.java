@@ -1,6 +1,6 @@
 
 public class BaconianCipher{
-    private static String decode(String msg){
+    public static String decode(String msg){
         java.util.HashMap<String, Character> map=new java.util.HashMap();
         map.put("aaaaa",'A'); 
         map.put("aaaab",'B');
@@ -43,7 +43,7 @@ public class BaconianCipher{
         return result.toString();
     }
     
-    private static String encode(String msg){
+    public static String encode(String msg){
         msg=msg.toUpperCase();
         java.util.HashMap<Character, String> map=new java.util.HashMap();
         map.put('A',"aaaaa"); 
