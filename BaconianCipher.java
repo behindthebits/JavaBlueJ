@@ -1,6 +1,25 @@
 
 public class BaconianCipher{
     public static String decode(String msg){
+        /* convert num to baconian with algorithm 
+        int num=0;
+        String finalStr=new String();
+        
+        for(int index=0;index<26;index++){
+        String binStr=Integer.toBinaryString(num);
+        java.text.DecimalFormat formatStr=new java.text.DecimalFormat("00000");
+        binStr=formatStr.format(Integer.parseInt(Integer.toBinaryString(num)));
+
+        for(int i=0;i<binStr.length();i++){
+         if(binStr.charAt(i)=='0')
+            finalStr+='a';
+         else
+            finalStr+='b';
+        }
+        System.out.println((char)('A'+num++) +"  "+ finalStr);
+        finalStr="";
+        }
+         */
         java.util.HashMap<String, Character> map=new java.util.HashMap();
         map.put("aaaaa",'A'); 
         map.put("aaaab",'B');
